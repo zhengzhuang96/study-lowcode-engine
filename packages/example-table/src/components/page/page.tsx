@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2024-03-21 21:21:37
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2024-03-21 22:45:27
+ * @LastEditTime: 2024-03-21 23:03:49
  * @Description: 
  */
 import * as React from 'react';
@@ -33,11 +33,14 @@ export interface PageProps {
   style?: object;
 }
 
-const Page: React.FC<PageProps> = function Page({
-  color,
-  style = {},
-  ...otherProps
-}) {
+const Page: React.FC<PageProps> = function Page(props: any) {
+  const {
+    color,
+    style = {},
+    designMode,
+    ...otherProps
+  } = props
+
   // univer
   const univer = new Univer({
     theme: defaultTheme,
@@ -53,9 +56,9 @@ const Page: React.FC<PageProps> = function Page({
   univer.registerPlugin(UniverRenderEnginePlugin);
   univer.registerPlugin(UniverUIPlugin, {
     container: "index",
-    header: true,
-    toolbar: true,
-    footer: true,
+    header: designMode === "design",
+    toolbar: designMode === "design",
+    footer: designMode === "design",
   });
   univer.registerPlugin(UniverSheetsPlugin);
   univer.registerPlugin(UniverSheetsUIPlugin);
