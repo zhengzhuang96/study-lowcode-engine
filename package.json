@@ -1,0 +1,22 @@
+{
+  "name": "study-lowcode-engine",
+  "version": "1.0.0",
+  "description": "ali lowcode 学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengzhuang96/study-lowcode-engine.git"
+  },
+  "keywords": [
+    "lowcode"
+  ],
+  "author": "zhengzhuang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengzhuang96/study-lowcode-engine/issues"
+  },
+  "homepage": "https://github.com/zhengzhuang96/study-lowcode-engine#readme"
+}
