@@ -6,7 +6,7 @@
 
 ```tsx
 import React from 'react';
-import { ColorfulInput } from 'example-table';
+import { ColorfulInput } from 'example-excel';
 
 
 export default () => {

@@ -7,7 +7,7 @@ const PageMeta: IPublicTypeComponentMetadata = {
   screenshot: '',
   devMode: 'proCode',
   npm: {
-    package: 'example-table',
+    package: 'example-excel',
     version: '0.1.0',
     exportName: 'Page',
     main: 'src/index.tsx',

@@ -8,7 +8,7 @@ const ColorfulButtonMeta: IPublicTypeComponentMetadata = {
   "screenshot": "",
   "devMode": "proCode",
   "npm": {
-    "package": "example-table",
+    "package": "example-excel",
     "version": "0.1.0",
     "exportName": "ColorfulButton",
     "main": "src/index.tsx",
